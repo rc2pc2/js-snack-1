@@ -4,7 +4,7 @@ const userName = prompt('Insert your name');
 let isGuestAGuest = false;
 
 for (let index = 0; index < guestList.length; index++) {
-    if (guestList[index] === userName){
+    if (guestList[index].toLowerCase() === userName.toLowerCase()){
         isGuestAGuest = true;
     }
 }
